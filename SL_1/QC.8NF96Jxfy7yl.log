@@ -1,0 +1,96 @@
+Starting QoRTs v1.2.42 (Compiled Fri Jun  2 12:23:55 EDT 2017)
+Starting time: (Sun Mar 21 17:34:45 EDT 2021)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=./bam/SL_1.bam
+  INPUT_ARG(gtffile)=/home/nib4003/ANGSD_2021_hw/final_project/gencode.vM25.primary_assembly.annotation.gtf
+  INPUT_ARG(outdir)=SL_1
+  INPUT_ARG(singleEnded)=true
+  INPUT_ARG(generatePdfReport)=true
+Creating Directory: SL_1
+Created Log File: SL_1/QC.8NF96Jxfy7yl.log
+NOTE: maximum allocation memory = 3.817865216 gigabytes.
+    This might be ok, or might cause OutOfMemoryExceptions later.
+    For most large datasets/genomes at least 4 gb is recommended.
+    (Actual required memory may be less than this.)
+    To increase the memory maximum, include the parameter -Xmx
+    in between the java command and the -jar parameter.
+    For example: to increase the memory maximum to 4 gigabytes:
+        java -Xmx4G -jar /path/to/jar/QoRTs.jar QC ...
+Starting QC
+[Time: 2021-03-21 17:34:45] [Mem usage: [23MB / 375MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in single-end mode.
+Note: read-sorting is irrelevant in single-ended mode.
+No parameter --genomeFA found.
+Running functions: CigarOpDistribution, GCDistribution, GeneCalcs, JunctionCalcs, NVC, 
+        QualityScoreDistribution, StrandCheck, chromCounts, 
+        cigarLocusCounts, readLengthDistro, writeBiotypeCounts, 
+        writeClippedNVC, writeDESeq, writeDEXSeq, writeGeneBody, 
+        writeGeneCounts, writeGenewiseGeneBody, 
+        writeJunctionSeqCounts, writeKnownSplices, 
+        writeNovelSplices, writeSpliceExon
+Checking first 10000 reads. Checking SAM file for formatting errors...
+   Stats on the first 10000 reads:
+        Num Reads Primary Map:    7683
+        Num Reads Paired-ended:   0
+        Num Reads mapped pair:    0
+        Num Pair names found:     0
+        Num Pairs matched:        0
+        Read Seq length:          50 to 50
+        Unclipped Read length:    50 to 50
+        Final maxReadLength:      50
+        maxPhredScore:            38
+        minPhredScore:            2
+Done checking first 10000 reads. No major problems detected!
+SAMRecord Reader Generated. Read length: 50.
+[Time: 2021-03-21 17:34:48] [Mem usage: [286MB / 670MB]] [Elapsed Time: 00:00:02.0255]
+> Init GeneCalcs Utility
+> Init NVC utility
+> Init CigarOpDistribution Utility
+> Init QualityScoreDistribution Utility
+> Init GC counts Utility
+> Init JunctionCalcs utility
+Compiling flat feature annotation, internally in memory...
+FlatteningGtf: starting...(2021-03-21 17:36:27)
+    FlatteningGtf: gtf file read complete.(2021-03-21 17:37:44)
+    FlatteningGtf: Splice Junction Map read.(2021-03-21 17:37:46)
+    FlatteningGtf: gene Sets generated.(2021-03-21 17:37:47)
+    FlatteningGtf: Aggregate Sets built.
+    FlatteningGtf: Compiling Aggregate Info . . . (2021-03-21 17:37:47)
+    FlatteningGtf: Finished Compiling Aggregate Info. (2021-03-21 17:37:47)
+    FlatteningGtf: Iterating through the step-vector...(2021-03-21 17:37:47)
+    FlatteningGtf: Adding the aggregate genes themselves...(2021-03-21 17:37:51)
+    FlatteningGtf: Iterating through the splice junctions...(2021-03-21 17:37:52)
+    FlatteningGtf: Sorting the aggregate genes...(2021-03-21 17:37:53)
+    FlatteningGtf: Folding the FlatGtfLine iterator...(2021-03-21 17:37:54)
+    FlatteningGtf: Features Built.(2021-03-21 17:37:54)
+Internal flat feature annotation compiled!
+length of knownSpliceMap after instantiation: 285250
+length of knownCountMap after instantiation: 285250
+> Init StrandCheck Utility
+> Init chromCount Utility
+> Init qcCigarLocusCounts Utility
+> Init MinorUtils Utility
+QC Utilities Generated!
+[Time: 2021-03-21 17:38:00] [Mem usage: [1427MB / 2478MB]] [Elapsed Time: 00:03:14.0330]
+helper_calculateGeneAssignmentMap_strict. Found: 55487 genes in the supplied annotation.
+helper_calculateGeneAssignmentMap_strict. Found: 11722 genes with ambiguous segments.
+helper_calculateGeneAssignmentMap_strict. Found: 43765 genes after first-pass filtering
+making makeGeneIntervalMap for geneBody calculations. Found: 43765 acceptable genes for gene-body analysis.
+..........[1000000 Read-Pairs processed] [Time: 2021-03-21 17:39:20] 
+..........[2000000 Read-Pairs processed] [Time: 2021-03-21 17:40:06] 
+..........[3000000 Read-Pairs processed] [Time: 2021-03-21 17:40:51] 
+..........[4000000 Read-Pairs processed] [Time: 2021-03-21 17:41:38] 
+..........[5000000 Read-Pairs processed] [Time: 2021-03-21 17:42:20] 
+..........[6000000 Read-Pairs processed] [Time: 2021-03-21 17:43:07] 
+..........[7000000 Read-Pairs processed] [Time: 2021-03-21 17:43:52] 
+..........[8000000 Read-Pairs processed] [Time: 2021-03-21 17:44:38] 
+..........[9000000 Read-Pairs processed] [Time: 2021-03-21 17:45:16] 
+..........[10000000 Read-Pairs processed] [Time: 2021-03-21 17:46:03] 
+..........[11000000 Read-Pairs processed] [Time: 2021-03-21 17:46:50] 
+..........[12000000 Read-Pairs processed] [Time: 2021-03-21 17:47:39] 
+..........[13000000 Read-Pairs processed] [Time: 2021-03-21 17:48:25] 
+..........[14000000 Read-Pairs processed] [Time: 2021-03-21 17:49:12] 
+..........[15000000 Read-Pairs processed] [Time: 2021-03-21 17:50:13] 
+..........[16000000 Read-Pairs processed] [Time: 2021-03-21 17:51:02] 
+..........[17000000 Read-Pairs processed] [Time: 2021-03-21 17:51:51] 
+....

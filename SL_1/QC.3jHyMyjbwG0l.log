@@ -1,0 +1,318 @@
+Starting QoRTs v1.2.42 (Compiled Fri Jun  2 12:23:55 EDT 2017)
+Starting time: (Sun Mar 21 17:55:15 EDT 2021)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=./bam/SL_1.bam
+  INPUT_ARG(gtffile)=/home/nib4003/ANGSD_2021_hw/final_project/gencode.vM25.primary_assembly.annotation.gtf
+  INPUT_ARG(outdir)=SL_1
+  INPUT_ARG(singleEnded)=true
+  INPUT_ARG(generatePdfReport)=true
+Created Log File: SL_1/QC.3jHyMyjbwG0l.log
+Warning: run-in-progress file "SL_1/QC.QORTS_RUNNING" already exists. Is there another QoRTs job running?
+NOTE: maximum allocation memory = 3.817865216 gigabytes.
+    This might be ok, or might cause OutOfMemoryExceptions later.
+    For most large datasets/genomes at least 4 gb is recommended.
+    (Actual required memory may be less than this.)
+    To increase the memory maximum, include the parameter -Xmx
+    in between the java command and the -jar parameter.
+    For example: to increase the memory maximum to 4 gigabytes:
+        java -Xmx4G -jar /path/to/jar/QoRTs.jar QC ...
+Starting QC
+[Time: 2021-03-21 17:55:15] [Mem usage: [73MB / 2022MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in single-end mode.
+Note: read-sorting is irrelevant in single-ended mode.
+No parameter --genomeFA found.
+Running functions: CigarOpDistribution, GCDistribution, GeneCalcs, JunctionCalcs, NVC, 
+        QualityScoreDistribution, StrandCheck, chromCounts, 
+        cigarLocusCounts, readLengthDistro, writeBiotypeCounts, 
+        writeClippedNVC, writeDESeq, writeDEXSeq, writeGeneBody, 
+        writeGeneCounts, writeGenewiseGeneBody, 
+        writeJunctionSeqCounts, writeKnownSplices, 
+        writeNovelSplices, writeSpliceExon
+Checking first 10000 reads. Checking SAM file for formatting errors...
+   Stats on the first 10000 reads:
+        Num Reads Primary Map:    7683
+        Num Reads Paired-ended:   0
+        Num Reads mapped pair:    0
+        Num Pair names found:     0
+        Num Pairs matched:        0
+        Read Seq length:          50 to 50
+        Unclipped Read length:    50 to 50
+        Final maxReadLength:      50
+        maxPhredScore:            38
+        minPhredScore:            2
+Done checking first 10000 reads. WARNINGS FOUND!
+SAMRecord Reader Generated. Read length: 50.
+[Time: 2021-03-21 17:55:17] [Mem usage: [261MB / 2022MB]] [Elapsed Time: 00:00:01.0832]
+> Init GeneCalcs Utility
+> Init NVC utility
+> Init CigarOpDistribution Utility
+> Init QualityScoreDistribution Utility
+> Init GC counts Utility
+> Init JunctionCalcs utility
+Compiling flat feature annotation, internally in memory...
+FlatteningGtf: starting...(2021-03-21 18:00:46)
+    FlatteningGtf: gtf file read complete.(2021-03-21 18:02:15)
+    FlatteningGtf: Splice Junction Map read.(2021-03-21 18:02:16)
+    FlatteningGtf: gene Sets generated.(2021-03-21 18:02:17)
+    FlatteningGtf: Aggregate Sets built.
+    FlatteningGtf: Compiling Aggregate Info . . . (2021-03-21 18:02:17)
+    FlatteningGtf: Finished Compiling Aggregate Info. (2021-03-21 18:02:17)
+    FlatteningGtf: Iterating through the step-vector...(2021-03-21 18:02:17)
+    FlatteningGtf: Adding the aggregate genes themselves...(2021-03-21 18:02:18)
+    FlatteningGtf: Iterating through the splice junctions...(2021-03-21 18:02:19)
+    FlatteningGtf: Sorting the aggregate genes...(2021-03-21 18:02:20)
+    FlatteningGtf: Folding the FlatGtfLine iterator...(2021-03-21 18:02:20)
+    FlatteningGtf: Features Built.(2021-03-21 18:02:20)
+Internal flat feature annotation compiled!
+length of knownSpliceMap after instantiation: 285250
+length of knownCountMap after instantiation: 285250
+> Init StrandCheck Utility
+> Init chromCount Utility
+> Init qcCigarLocusCounts Utility
+> Init MinorUtils Utility
+QC Utilities Generated!
+[Time: 2021-03-21 18:02:42] [Mem usage: [1218MB / 2862MB]] [Elapsed Time: 00:07:27.0091]
+helper_calculateGeneAssignmentMap_strict. Found: 55487 genes in the supplied annotation.
+helper_calculateGeneAssignmentMap_strict. Found: 11722 genes with ambiguous segments.
+helper_calculateGeneAssignmentMap_strict. Found: 43765 genes after first-pass filtering
+making makeGeneIntervalMap for geneBody calculations. Found: 43765 acceptable genes for gene-body analysis.
+..........[1000000 Read-Pairs processed] [Time: 2021-03-21 18:05:39] 
+..........[2000000 Read-Pairs processed] [Time: 2021-03-21 18:06:17] 
+..........[3000000 Read-Pairs processed] [Time: 2021-03-21 18:07:36] 
+..........[4000000 Read-Pairs processed] [Time: 2021-03-21 18:09:12] 
+..........[5000000 Read-Pairs processed] [Time: 2021-03-21 18:10:31] 
+..........[6000000 Read-Pairs processed] [Time: 2021-03-21 18:11:43] 
+..........[7000000 Read-Pairs processed] [Time: 2021-03-21 18:13:43] 
+..........[8000000 Read-Pairs processed] [Time: 2021-03-21 18:15:47] 
+..........[9000000 Read-Pairs processed] [Time: 2021-03-21 18:17:39] 
+..........[10000000 Read-Pairs processed] [Time: 2021-03-21 18:18:17] 
+..........[11000000 Read-Pairs processed] [Time: 2021-03-21 18:19:16] 
+..........[12000000 Read-Pairs processed] [Time: 2021-03-21 18:21:14] 
+..........[13000000 Read-Pairs processed] [Time: 2021-03-21 18:22:35] 
+..........[14000000 Read-Pairs processed] [Time: 2021-03-21 18:23:41] 
+..........[15000000 Read-Pairs processed] [Time: 2021-03-21 18:24:31] 
+..........[16000000 Read-Pairs processed] [Time: 2021-03-21 18:25:11] 
+..........[17000000 Read-Pairs processed] [Time: 2021-03-21 18:25:54] 
+..........[18000000 Read-Pairs processed] [Time: 2021-03-21 18:26:36] 
+..........[19000000 Read-Pairs processed] [Time: 2021-03-21 18:27:04] 
+..........[20000000 Read-Pairs processed] [Time: 2021-03-21 18:27:18] 
+..........[21000000 Read-Pairs processed] [Time: 2021-03-21 18:27:20] 
+..........[22000000 Read-Pairs processed] [Time: 2021-03-21 18:28:11] 
+..........[23000000 Read-Pairs processed] [Time: 2021-03-21 18:28:48] 
+..........[24000000 Read-Pairs processed] [Time: 2021-03-21 18:29:32] 
+..........[25000000 Read-Pairs processed] [Time: 2021-03-21 18:30:11] 
+..........[26000000 Read-Pairs processed] [Time: 2021-03-21 18:30:53] 
+..........[27000000 Read-Pairs processed] [Time: 2021-03-21 18:31:31] 
+..........[28000000 Read-Pairs processed] [Time: 2021-03-21 18:32:18] 
+..........[29000000 Read-Pairs processed] [Time: 2021-03-21 18:32:55] 
+..........[30000000 Read-Pairs processed] [Time: 2021-03-21 18:33:34] 
+.........
+Finished reading SAM. Read: 30924303 reads/read-pairs.
+Finished reading SAM. Used: 25861167 reads/read-pairs.
+[Time: 2021-03-21 18:34:12] [Mem usage: [1801MB / 3672MB]] [Elapsed Time: 00:38:57.0182]
+> Read Stats:
+>   READ_PAIR_OK                   25861167
+>   TOTAL_READ_PAIRS               30924303
+>   DROPPED_NOT_PROPER_PAIR        -1
+>   DROPPED_READ_FAILS_VENDOR_QC   0
+>   DROPPED_MARKED_NOT_VALID       0
+>   DROPPED_CHROMS_MISMATCH        -1
+>   DROPPED_PAIR_STRANDS_MISMATCH  -1
+>   DROPPED_IGNORED_CHROMOSOME     0
+>   DROPPED_NOT_UNIQUE_ALIGNMENT   5063136
+>   DROPPED_NO_ALN_BLOCKS   0
+>   DROPPED_NOT_MARKED_RG   -1
+Pre-alignment read count unknown (Set --seqReadCt or --rawfastq)
+Writing Output...
+DEBUG NOTE: IncludeGenesSet.size: 43765
+DEBUG NOTE: sortedReadCountSeq.size: 20939
+DEBUG NOTE: coverageThresholds: 10469;15704;18845;20939
+DEBUG NOTE: coverageSpans: [(0,10469);(10469,15704);(15704,18845);(18845,20939)]
+DEBUG NOTE:	[1.bottomHalf][0.5] = [0,10469]
+DEBUG NOTE:	[2.upperMidQuartile][0.75] = [10469,15704]
+DEBUG NOTE:	[3.75to90][0.9] = [15704,18845]
+DEBUG NOTE:	[4.high][1.0] = [18845,20939]
+      (DEBUG) Generating Biotype Map [2021-03-21 18:34:14]
+      (DEBUG) Extracted gene BioType using key "gene_biotype".
+              Found 0 types: []
+      (DEBUG) Finished Biotype Map [2021-03-21 18:35:45]
+length of knownCountMap after run: 285250
+WARNING: The data appears to be STRANDED, following the fr_firstStrand rule.
+         Are you sure this isn't stranded data? If it is stranded, then you should probably
+         re-run QoRTs with the "--stranded" option!
+QoRTs completed WITH WARNINGS! See log for details.
+Generating plots...
+ > Starting R execution. (generating plots)
+   > shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+   > STARTING...
+   > UntitledSL_1/UntitledUNKNOWNUNKNOWN
+   > charactercharactercharactercharactercharactercharacter
+   > Note: no input.read.pair.count column found. This column is optional, but without it mapping rates cannot be calculated.
+   > Note: no multi.mapped.read.pair.count column found. This column is optional, but without it (depending on how your aligner implements multi-mapping) multi-mapping rates might not be plotted.
+   > WARNING: QoRTs run may be incomplete! File not found: SL_1//QC.QORTS_COMPLETED_OK!
+   > infile.dir = 
+   > scalaqc_file = QC.summary.txt.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+   > Autodetected Single-End mode.
+   > (File 1 of 24): QC.gc.byRead.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 2 of 24): QC.gc.byRead.vsBaseCt.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+   > (File 3 of 24): QC.quals.r1.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 4 of 24): QC.cigarOpDistribution.byReadCycle.R1.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+   > (File 5 of 24): QC.cigarOpLengths.byOp.R1.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0.03 secs]
+   > (File 6 of 24): QC.geneBodyCoverage.by.expression.level.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 7 of 24): QC.geneCounts.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0.11 secs]
+   > (File 8 of 24): QC.NVC.raw.R1.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 9 of 24): QC.NVC.lead.clip.R1.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+   > (File 10 of 24): QC.NVC.tail.clip.R1.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+   > (File 11 of 24): QC.NVC.minus.clipping.R1.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+   > (File 12 of 24): QC.chromCount.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 13 of 24): QC.biotypeCounts.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 14 of 24): QC.geneBodyCoverage.byExpr.avgPct.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 15 of 24): QC.readLenDist.txt.gz.done.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 16 of 24): QC.referenceMismatchCounts.txt.gzFailed: Cannot find file: SL_1//QC.referenceMismatchCounts.txt.gz. Skipping tests that use this data.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 17 of 24): QC.referenceMismatchRaw.byReadStrand.txtFailed: Cannot find file: SL_1//QC.referenceMismatchRaw.byReadStrand.txt. Skipping tests that use this data.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 18 of 24): QC.referenceMismatch.byScore.txtFailed: Cannot find file: SL_1//QC.referenceMismatch.byScore.txt. Skipping tests that use this data.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 19 of 24): QC.referenceMismatch.byScoreAndBP.txtFailed: Cannot find file: SL_1//QC.referenceMismatch.byScoreAndBP.txt. Skipping tests that use this data.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 20 of 24): QC.mismatchSizeRates.txt.gzFailed: Cannot find file: SL_1//QC.mismatchSizeRates.txt.gz. Skipping tests that use this data.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 21 of 24): QC.FQ.gc.byRead.txt.gzFailed: Cannot find file: SL_1//QC.FQ.gc.byRead.txt.gz. Skipping tests that use this data.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 22 of 24): QC.FQ.NVC.R1.txt.gzFailed: Cannot find file: SL_1//QC.FQ.NVC.R1.txt.gz. Skipping tests that use this data.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 23 of 24): QC.FQ.quals.r1.txt.gzFailed: Cannot find file: SL_1//QC.FQ.quals.r1.txt.gz. Skipping tests that use this data.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > (File 24 of 24): QC.FQ.readLenDist.txt.gzFailed: Cannot find file: SL_1//QC.FQ.readLenDist.txt.gz. Skipping tests that use this data.
+   >    [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > calculating secondary data:
+   > Calculating Quality Score Rates...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > Calculating cumulative gene coverage, by replicate...done. [time: 2021-03-21 18:36:08],[elapsed: 0.03 secs]
+   > Calculating cumulative gene coverage, by sample...done. [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+   > Calculating Mapping Rates...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > calculating normalization factors, by sample...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > calculating normalization factors, by replicate...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > calculating normalization factors, by sample/replicate...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > Calculating summary stats...done. [time: 2021-03-21 18:36:08],[elapsed: 0.02 secs]
+   > Calculating read length distribution...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > Calculating summary table...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > Calculating overlap mismatch combos...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > Calculating NVC rates...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > done.
+   > [time: 2021-03-21 18:36:08],[elapsed: 0.08 secs]
+   > Skipping: "onTarget.rates","onTarget.counts","overlap.mismatch.byAvgQual"
+   > cannot open raster images, because package "png" not found. Install package png (with command install.packages("png")) or set rasterize.large.plots to FALSE!
+   > cannot open raster images, because package "png" not found. Install package png (with command install.packages("png")) or set rasterize.medium.plots to FALSE!
+   > Rasterize large plots: FALSE
+   > Rasterize medium plots: FALSE
+   > Skipping due to missing data: "insert.size","overlap.coverage","overlapMismatch.byCycle","overlapMismatch.byQual.min","overlapMismatch.byQual.read","overlapMismatch.byBase","overlapMismatch.size","overlapMismatch.byBase.atScore","referenceMismatch.byCycle","referenceMismatch.byScore","referenceMismatch.byBase","referenceMismatch.byBase.atScore.R1","referenceMismatch.byBase.atScore.R2","mapping.rates","norm.factors","norm.vs.TC"
+   > Plotting extended...
+   > Starting compiled plot...
+   > Starting: Minimum plot.
+   > Finished: Minimum Phred Quality Score plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > Starting: Lower Quartile plot.
+   > Finished: Lower Quartile Phred Quality Score plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > Starting: Median plot.
+   > Finished: Median Phred Quality Score plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > Starting: Upper Quartile plot.
+   > Finished: Upper Quartile Phred Quality Score plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > Starting: Maximum plot.
+   > Finished: Maximum Phred Quality Score plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   >   layoutCap = 6
+   >   layoutStart = 7
+   >   i = 7
+   > Starting: Alignment Clipping Rate, by read cycle plot.
+   > Finished: Alignment Clipping Rate, by read cycle plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > Starting: Deletion Rate, by read cycle plot.
+   > Finished: Deletion Rate, by read cycle plot.[time: 2021-03-21 18:36:08],[elapsed: 0.04 secs]
+   > Starting: Insertion Rate, by read cycle plot.
+   > Finished: Insertion Rate, by read cycle plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > Starting: Splice Junction Rate, by read cycle plot.
+   > Finished: Splice Junction Rate, by read cycle plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+   > Starting: Insertion Length Distribution plot.
+   > Finished: Insertion Length Distribution plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   > Starting: Deletion Length Distribution plot.
+   > Finished: Deletion Length Distribution plot.[time: 2021-03-21 18:36:09],[elapsed: 0.04 secs]
+   >   layoutCap = 6
+   >   layoutStart = 13
+   >   i = 13
+   > Starting: GC Content plot.
+   > Finished: GC Content plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   > Starting: Missingness Rate, by read cycle plot.
+   > Finished: Missingness Rate, by read cycle plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   > Starting: Dropped Rates plot.
+   > Finished: Dropped Rates plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   > Starting: Read Length Distribution plot.
+   > Finished: Read Length Distribution plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   > Starting: Cumulative Gene Assignment Diversity plot.
+   > Finished: Cumulative Gene Assignment Diversity plot.[time: 2021-03-21 18:36:09],[elapsed: 0.05 secs]
+   > Starting: Gene-Body Coverage plot.
+   > Finished: Gene-Body Coverage plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   >   layoutCap = 6
+   >   layoutStart = 19
+   >   i = 19
+   > Starting: Gene-Body Coverage, Upper Middle Quartile Genes plot.
+   > Finished: Gene-Body Coverage, Upper Middle Quartile Genes plot.[time: 2021-03-21 18:36:09],[elapsed: 0.02 secs]
+   > Starting: Gene-Body Coverage, Low Expression Genes plot.
+   > Finished: Gene-Body Coverage, Low Expression Genes plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   > Starting: Gene Assignment Rates plot.
+   > Finished: Gene Assignment Rates plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   > Starting: Splice Junction Loci Rates plot.
+   > Finished: Splice Junction Loci Rates plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   > Starting: Splice Junction Event Rates plot.
+   > Finished: Splice Junction Event Rates plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   > Starting: Splice Junction Event Rates plot.
+   > Finished: Splice Junction Event Rates plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   >   layoutCap = 5
+   >   layoutStart = 25
+   >   i = 25
+   > Starting: Chromosome Rates plot.
+   > Finished: Chromosome Rates plot.[time: 2021-03-21 18:36:09],[elapsed: 0.01 secs]
+   > Starting: Strandedness Test plot.
+   > Finished: Strandedness Test plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   > Starting: Lead Clipping NVC plot.
+   > Finished: Lead Clipping NVC plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   > Starting: Tail Clipping NVC plot.
+   > Finished: Tail Clipping NVC plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   > Starting: NVC, Raw plot.
+   > Finished: NVC, Raw plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+   >   layoutCap = 1
+   >   layoutStart = 30
+   >   i = 30
+   > Starting: NVC, Aligned bases only plot.
+   > Finished: NVC, Aligned bases only plot.[time: 2021-03-21 18:36:09],[elapsed: 0.01 secs]
+   > Finished Multiplot[time: 2021-03-21 18:36:09],[elapsed: 0.3 secs]
+   > Done with plot.
+   > Warning messages:
+   > 1: In check.rasterize.or.warn("rasterize.large.plots") :
+   >   cannot open raster images, because package "png" not found. Install package png (with command install.packages("png")) or set rasterize.large.plots to FALSE!
+   > 2: In check.rasterize.or.warn("rasterize.medium.plots") :
+   >   cannot open raster images, because package "png" not found. Install package png (with command install.packages("png")) or set rasterize.medium.plots to FALSE!
+   > DONE...
+   > shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+ > Finished R execution.
+Done.
+Time spent on setup:           00:07:27.0091
+Time spent on SAM iteration:   00:31:30.0091
+                               (1.0186163290406254 minutes per million read-pairs)
+                               (1.2180424804495482 minutes per million read-pairs used)
+Time spent on file output:     00:01:56.0537
+Total runtime:                 00:40:53.0719
+Done. (Sun Mar 21 18:36:09 EDT 2021)

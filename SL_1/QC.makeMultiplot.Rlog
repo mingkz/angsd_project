@@ -1,0 +1,164 @@
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory
+STARTING...
+UntitledSL_1/UntitledUNKNOWNUNKNOWN
+charactercharactercharactercharactercharactercharacter
+Note: no input.read.pair.count column found. This column is optional, but without it mapping rates cannot be calculated.
+Note: no multi.mapped.read.pair.count column found. This column is optional, but without it (depending on how your aligner implements multi-mapping) multi-mapping rates might not be plotted.
+WARNING: QoRTs run may be incomplete! File not found: SL_1//QC.QORTS_COMPLETED_OK!
+infile.dir = 
+scalaqc_file = QC.summary.txt.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+Autodetected Single-End mode.
+(File 1 of 24): QC.gc.byRead.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 2 of 24): QC.gc.byRead.vsBaseCt.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+(File 3 of 24): QC.quals.r1.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 4 of 24): QC.cigarOpDistribution.byReadCycle.R1.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+(File 5 of 24): QC.cigarOpLengths.byOp.R1.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0.03 secs]
+(File 6 of 24): QC.geneBodyCoverage.by.expression.level.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 7 of 24): QC.geneCounts.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0.11 secs]
+(File 8 of 24): QC.NVC.raw.R1.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 9 of 24): QC.NVC.lead.clip.R1.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+(File 10 of 24): QC.NVC.tail.clip.R1.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+(File 11 of 24): QC.NVC.minus.clipping.R1.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+(File 12 of 24): QC.chromCount.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 13 of 24): QC.biotypeCounts.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 14 of 24): QC.geneBodyCoverage.byExpr.avgPct.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 15 of 24): QC.readLenDist.txt.gz.done.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 16 of 24): QC.referenceMismatchCounts.txt.gzFailed: Cannot find file: SL_1//QC.referenceMismatchCounts.txt.gz. Skipping tests that use this data.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 17 of 24): QC.referenceMismatchRaw.byReadStrand.txtFailed: Cannot find file: SL_1//QC.referenceMismatchRaw.byReadStrand.txt. Skipping tests that use this data.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 18 of 24): QC.referenceMismatch.byScore.txtFailed: Cannot find file: SL_1//QC.referenceMismatch.byScore.txt. Skipping tests that use this data.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 19 of 24): QC.referenceMismatch.byScoreAndBP.txtFailed: Cannot find file: SL_1//QC.referenceMismatch.byScoreAndBP.txt. Skipping tests that use this data.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 20 of 24): QC.mismatchSizeRates.txt.gzFailed: Cannot find file: SL_1//QC.mismatchSizeRates.txt.gz. Skipping tests that use this data.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 21 of 24): QC.FQ.gc.byRead.txt.gzFailed: Cannot find file: SL_1//QC.FQ.gc.byRead.txt.gz. Skipping tests that use this data.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 22 of 24): QC.FQ.NVC.R1.txt.gzFailed: Cannot find file: SL_1//QC.FQ.NVC.R1.txt.gz. Skipping tests that use this data.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 23 of 24): QC.FQ.quals.r1.txt.gzFailed: Cannot find file: SL_1//QC.FQ.quals.r1.txt.gz. Skipping tests that use this data.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+(File 24 of 24): QC.FQ.readLenDist.txt.gzFailed: Cannot find file: SL_1//QC.FQ.readLenDist.txt.gz. Skipping tests that use this data.
+   [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+calculating secondary data:
+Calculating Quality Score Rates...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+Calculating cumulative gene coverage, by replicate...done. [time: 2021-03-21 18:36:08],[elapsed: 0.03 secs]
+Calculating cumulative gene coverage, by sample...done. [time: 2021-03-21 18:36:08],[elapsed: 0.01 secs]
+Calculating Mapping Rates...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+calculating normalization factors, by sample...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+calculating normalization factors, by replicate...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+calculating normalization factors, by sample/replicate...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+Calculating summary stats...done. [time: 2021-03-21 18:36:08],[elapsed: 0.02 secs]
+Calculating read length distribution...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+Calculating summary table...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+Calculating overlap mismatch combos...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+Calculating NVC rates...done. [time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+done.
+[time: 2021-03-21 18:36:08],[elapsed: 0.08 secs]
+Skipping: "onTarget.rates","onTarget.counts","overlap.mismatch.byAvgQual"
+cannot open raster images, because package "png" not found. Install package png (with command install.packages("png")) or set rasterize.large.plots to FALSE!
+cannot open raster images, because package "png" not found. Install package png (with command install.packages("png")) or set rasterize.medium.plots to FALSE!
+Rasterize large plots: FALSE
+Rasterize medium plots: FALSE
+Skipping due to missing data: "insert.size","overlap.coverage","overlapMismatch.byCycle","overlapMismatch.byQual.min","overlapMismatch.byQual.read","overlapMismatch.byBase","overlapMismatch.size","overlapMismatch.byBase.atScore","referenceMismatch.byCycle","referenceMismatch.byScore","referenceMismatch.byBase","referenceMismatch.byBase.atScore.R1","referenceMismatch.byBase.atScore.R2","mapping.rates","norm.factors","norm.vs.TC"
+Plotting extended...
+Starting compiled plot...
+Starting: Minimum plot.
+Finished: Minimum Phred Quality Score plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+Starting: Lower Quartile plot.
+Finished: Lower Quartile Phred Quality Score plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+Starting: Median plot.
+Finished: Median Phred Quality Score plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+Starting: Upper Quartile plot.
+Finished: Upper Quartile Phred Quality Score plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+Starting: Maximum plot.
+Finished: Maximum Phred Quality Score plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+  layoutCap = 6
+  layoutStart = 7
+  i = 7
+Starting: Alignment Clipping Rate, by read cycle plot.
+Finished: Alignment Clipping Rate, by read cycle plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+Starting: Deletion Rate, by read cycle plot.
+Finished: Deletion Rate, by read cycle plot.[time: 2021-03-21 18:36:08],[elapsed: 0.04 secs]
+Starting: Insertion Rate, by read cycle plot.
+Finished: Insertion Rate, by read cycle plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+Starting: Splice Junction Rate, by read cycle plot.
+Finished: Splice Junction Rate, by read cycle plot.[time: 2021-03-21 18:36:08],[elapsed: 0 secs]
+Starting: Insertion Length Distribution plot.
+Finished: Insertion Length Distribution plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+Starting: Deletion Length Distribution plot.
+Finished: Deletion Length Distribution plot.[time: 2021-03-21 18:36:09],[elapsed: 0.04 secs]
+  layoutCap = 6
+  layoutStart = 13
+  i = 13
+Starting: GC Content plot.
+Finished: GC Content plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+Starting: Missingness Rate, by read cycle plot.
+Finished: Missingness Rate, by read cycle plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+Starting: Dropped Rates plot.
+Finished: Dropped Rates plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+Starting: Read Length Distribution plot.
+Finished: Read Length Distribution plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+Starting: Cumulative Gene Assignment Diversity plot.
+Finished: Cumulative Gene Assignment Diversity plot.[time: 2021-03-21 18:36:09],[elapsed: 0.05 secs]
+Starting: Gene-Body Coverage plot.
+Finished: Gene-Body Coverage plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+  layoutCap = 6
+  layoutStart = 19
+  i = 19
+Starting: Gene-Body Coverage, Upper Middle Quartile Genes plot.
+Finished: Gene-Body Coverage, Upper Middle Quartile Genes plot.[time: 2021-03-21 18:36:09],[elapsed: 0.02 secs]
+Starting: Gene-Body Coverage, Low Expression Genes plot.
+Finished: Gene-Body Coverage, Low Expression Genes plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+Starting: Gene Assignment Rates plot.
+Finished: Gene Assignment Rates plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+Starting: Splice Junction Loci Rates plot.
+Finished: Splice Junction Loci Rates plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+Starting: Splice Junction Event Rates plot.
+Finished: Splice Junction Event Rates plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+Starting: Splice Junction Event Rates plot.
+Finished: Splice Junction Event Rates plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+  layoutCap = 5
+  layoutStart = 25
+  i = 25
+Starting: Chromosome Rates plot.
+Finished: Chromosome Rates plot.[time: 2021-03-21 18:36:09],[elapsed: 0.01 secs]
+Starting: Strandedness Test plot.
+Finished: Strandedness Test plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+Starting: Lead Clipping NVC plot.
+Finished: Lead Clipping NVC plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+Starting: Tail Clipping NVC plot.
+Finished: Tail Clipping NVC plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+Starting: NVC, Raw plot.
+Finished: NVC, Raw plot.[time: 2021-03-21 18:36:09],[elapsed: 0 secs]
+  layoutCap = 1
+  layoutStart = 30
+  i = 30
+Starting: NVC, Aligned bases only plot.
+Finished: NVC, Aligned bases only plot.[time: 2021-03-21 18:36:09],[elapsed: 0.01 secs]
+Finished Multiplot[time: 2021-03-21 18:36:09],[elapsed: 0.3 secs]
+Done with plot.
+Warning messages:
+1: In check.rasterize.or.warn("rasterize.large.plots") :
+  cannot open raster images, because package "png" not found. Install package png (with command install.packages("png")) or set rasterize.large.plots to FALSE!
+2: In check.rasterize.or.warn("rasterize.medium.plots") :
+  cannot open raster images, because package "png" not found. Install package png (with command install.packages("png")) or set rasterize.medium.plots to FALSE!
+DONE...
+shell-init: error retrieving current directory: getcwd: cannot access parent directories: No such file or directory

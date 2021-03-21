@@ -1,0 +1,31 @@
+Starting QoRTs v1.2.42 (Compiled Fri Jun  2 12:23:55 EDT 2017)
+Starting time: (Sun Mar 21 17:52:18 EDT 2021)
+INPUT_COMMAND(QC)
+  INPUT_ARG(infile)=./bam/SL_3.bam
+  INPUT_ARG(gtffile)=/home/nib4003/ANGSD_2021_hw/final_project/gencode.vM25.primary_assembly.annotation.gtf
+  INPUT_ARG(outdir)=SL_3
+  INPUT_ARG(singleEnded)=true
+  INPUT_ARG(generatePdfReport)=true
+Creating Directory: SL_3
+Created Log File: SL_3/QC.G72oUY6clr4L.log
+NOTE: maximum allocation memory = 3.817865216 gigabytes.
+    This might be ok, or might cause OutOfMemoryExceptions later.
+    For most large datasets/genomes at least 4 gb is recommended.
+    (Actual required memory may be less than this.)
+    To increase the memory maximum, include the parameter -Xmx
+    in between the java command and the -jar parameter.
+    For example: to increase the memory maximum to 4 gigabytes:
+        java -Xmx4G -jar /path/to/jar/QoRTs.jar QC ...
+Starting QC
+[Time: 2021-03-21 17:52:18] [Mem usage: [23MB / 375MB]] [Elapsed Time: 00:00:00.0000]
+QoRTs is Running in single-end mode.
+Note: read-sorting is irrelevant in single-ended mode.
+No parameter --genomeFA found.
+Running functions: CigarOpDistribution, GCDistribution, GeneCalcs, JunctionCalcs, NVC, 
+        QualityScoreDistribution, StrandCheck, chromCounts, 
+        cigarLocusCounts, readLengthDistro, writeBiotypeCounts, 
+        writeClippedNVC, writeDESeq, writeDEXSeq, writeGeneBody, 
+        writeGeneCounts, writeGenewiseGeneBody, 
+        writeJunctionSeqCounts, writeKnownSplices, 
+        writeNovelSplices, writeSpliceExon
+Checking first 10000 reads. Checking SAM file for formatting errors...

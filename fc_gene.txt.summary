@@ -1,0 +1,13 @@
+Status	./bam/LP_1.bam	./bam/LP_2.bam	./bam/LP_3.bam	./bam/SL_1.bam	./bam/SL_2.bam	./bam/SL_3.bam
+Assigned	3793643	4176090	6758695	11627959	10584871	10810498
+Unassigned_Unmapped	0	0	0	0	0	0
+Unassigned_MappingQuality	0	0	0	0	0	0
+Unassigned_Chimera	0	0	0	0	0	0
+Unassigned_FragmentLength	0	0	0	0	0	0
+Unassigned_Duplicate	0	0	0	0	0	0
+Unassigned_MultiMapping	9242998	13549554	8820626	14316909	15831148	14533864
+Unassigned_Secondary	0	0	0	0	0	0
+Unassigned_Nonjunction	0	0	0	0	0	0
+Unassigned_NoFeatures	13047266	8945755	10917254	14233208	13155782	13823912
+Unassigned_Overlapping_Length	0	0	0	0	0	0
+Unassigned_Ambiguity	0	0	0	0	0	0
