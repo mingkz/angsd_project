@@ -1,0 +1,7 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SRR7655998.1	/pbtech_mounts/homes064/miz4003/angsd/angsd_project/fastq/SL/SRR7655998.1_fastqc/fastqc_data.txt
+FastQC	all_sections	SRR7656007.1	/pbtech_mounts/homes064/miz4003/angsd/angsd_project/fastq/LP/SRR7656007.1_fastqc/fastqc_data.txt
+FastQC	all_sections	SRR7656005.1	/pbtech_mounts/homes064/miz4003/angsd/angsd_project/fastq/LP/SRR7656005.1_fastqc/fastqc_data.txt
+FastQC	all_sections	SRR7655996.1	/pbtech_mounts/homes064/miz4003/angsd/angsd_project/fastq/SL/SRR7655996.1_fastqc/fastqc_data.txt
+FastQC	all_sections	SRR7655997.1	/pbtech_mounts/homes064/miz4003/angsd/angsd_project/fastq/SL/SRR7655997.1_fastqc/fastqc_data.txt
+FastQC	all_sections	SRR7656006.1	/pbtech_mounts/homes064/miz4003/angsd/angsd_project/fastq/LP/SRR7656006.1_fastqc/fastqc_data.txt
